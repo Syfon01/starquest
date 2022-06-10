@@ -1,6 +1,6 @@
 <template>
   <div class="carousel-cell">
-      <div class="py-4 text-center md:px-12 inner">
+      <div class="py-4 text-center md:px-12 inner px-6">
         <img src="../assets/img/rocket-img.png" alt="" class="w-40 h-40" srcset="">
         <h2 class="text-2xl font-semibold">{{nodeTitle}}</h2>
         <p>{{subTitle}}</p>
@@ -62,4 +62,10 @@ border-radius: 20px;
   background: rgba(45, 4, 129, 1);
 ;
 }
+@media screen and ( max-width: 600px ) {
+  .carousel-cell {
+    width: 100%;
+  }
+}
+
 </style>

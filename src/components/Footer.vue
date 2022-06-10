@@ -2,7 +2,7 @@
   <div class="py-10 bg-footer">
       <div class="container px-8 mx-auto md:px-8 2xl:px-32">
         <div class="grid items-center gap-4 space-4 md:flex">
-          <div class="pb-4 border-r md:border-black md:w-2/5">
+          <div class="pb-4 md:border-r md:border-black md:w-2/5">
             <div class="relative grid grid-cols-2 gap-4"> 
               <div>
                 <ul>
@@ -21,11 +21,11 @@
           <div class="w-full md:w-3/5 md:pl-3">
             
         <div class="grid items-end gap-4 space-4 md:flex">
-          <div class=" md:w-1/2">
+          <div class=" md:w-1/2 order-2 md:order-1">
             <img src="../assets/img/logo.png" alt="" srcset="" class="w-40 h-20">
             <p class="mt-5 font-medium"> © Copyright 2022 StarQuest</p>
             </div>
-          <div class="w-full md:w-3/5 md:pl-3">
+          <div class="w-full md:w-3/5 md:pl-3 order-1 md:order-2">
             <div class="mb-10 text-right">
               <button class="px-12 py-5 text-3xl font-semibold rounded-full btn-primary">Launch App</button>
             </div>
