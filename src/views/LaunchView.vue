@@ -19,7 +19,14 @@
     <Count :imageUrl="image1" countName="Wallet Owned Nodes" :count="42"/>
     <Count :imageUrl="image1" countName="Total Starship Nodes" :count="42"/>
     <Count :imageUrl="image2" countName="Space Quest Wallet Balance" count="2.04 ETH"/>
-
+  </div>
+  <div class="bg-primary py-16  container mx-auto md:px-8 2xl:px-32">
+    <h1 class="text-6xl font-semibold">Stats</h1>
+    <div class="grid grid-cols-3 gap-8 pt-10">
+      <Stat statName="Your Nodes" count="3/20" />
+      <Stat statName="Daily Rewards" count="110.03 ETH" />
+      <Stat statName="Total Nodes" count="14" />
+    </div>
   </div>
 </div>
 </template>
@@ -27,11 +34,13 @@
 import Flickity from 'vue-flickity'
 import NodeItem from "../components/NodeItem"
 import Count from '@/components/Count.vue'
+import Stat from '../components/Stat.vue'
 export default {
   components: {
     Flickity,
     NodeItem,
-    Count
+    Count,
+    Stat
 },
   data () {
     return {
