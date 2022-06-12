@@ -7,25 +7,32 @@
         <h2 class="text-3xl font-semibold text-center">Choose a vessel to take you on your journey</h2>
     </div>
   <flickity  class="flickity" ref="flickity" :options="flickityOptions">
-  <NodeItem nodeTitle="Apollo 13" subTitle="Moon Rover"/>
-  <NodeItem nodeTitle="Apollo 11" subTitle="Moon Rover"/>
-  <NodeItem nodeTitle="Armada 23" subTitle="First Saturn Rover"/>
-  <NodeItem nodeTitle="Apollo 12" subTitle="Moon Rover"/>
-  <NodeItem nodeTitle="Apollo 13" subTitle="First Saturn Rover"/>
-  <NodeItem nodeTitle="Apollo 13" subTitle="Moon Rover"/>
-
-   
+    <NodeItem nodeTitle="Apollo 13" subTitle="Moon Rover"/>
+    <NodeItem nodeTitle="Apollo 11" subTitle="Moon Rover"/>
+    <NodeItem nodeTitle="Armada 23" subTitle="First Saturn Rover"/>
+    <NodeItem nodeTitle="Apollo 12" subTitle="Moon Rover"/>
+    <NodeItem nodeTitle="Apollo 13" subTitle="First Saturn Rover"/>
+    <NodeItem nodeTitle="Apollo 13" subTitle="Moon Rover"/>
   </flickity>
+
+  <div class="py-16 grid grid-cols-3 gap-8 container mx-auto md:px-8 2xl:px-32">
+    <Count :imageUrl="image1" countName="Wallet Owned Nodes" :count="42"/>
+    <Count :imageUrl="image1" countName="Total Starship Nodes" :count="42"/>
+    <Count :imageUrl="image2" countName="Space Quest Wallet Balance" count="2.04 ETH"/>
+
+  </div>
 </div>
 </template>
 <script>
 import Flickity from 'vue-flickity'
 import NodeItem from "../components/NodeItem"
+import Count from '@/components/Count.vue'
 export default {
   components: {
     Flickity,
-    NodeItem
-  },
+    NodeItem,
+    Count
+},
   data () {
     return {
       flickityOptions: {
@@ -37,8 +44,11 @@ export default {
         "autoPlay": 5000,
         lazyLoad: 3,
         fullscreen: true
-        // any options from Flickity can be used
-      }
+      },
+        image1: require('../assets/img/node.png'),
+        image2: require('../assets/img/wallet.png')
+
+
     }
   }
 }

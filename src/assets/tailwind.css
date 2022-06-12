@@ -18,3 +18,10 @@
 .tx-primary{
   color: rgba(45, 4, 129, 1);
 }
+
+.bg-countItem{
+  background: radial-gradient(128% 128% at 89.3% 15.71%, rgba(255, 10, 127, 0.4) 11.98%, rgba(185, 0, 89, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+              linear-gradient(181.35deg, rgba(73, 238, 218, 0.6) -5.44%, rgba(73, 238, 218, 0) 140.3%),
+              linear-gradient(0deg, #5E00DD, #5E00DD);
+  border-radius:36px;
+}
